@@ -8,6 +8,7 @@ package Interfaz;
  *
  * @author Elizabeth
  */
-public interface IInterfazTrabajador {
+public interface IInterfazTrabajador <T>{
+    T trabajar();
     
 }
