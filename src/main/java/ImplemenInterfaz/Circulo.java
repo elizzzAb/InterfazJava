@@ -11,7 +11,7 @@ import Interfaz.IInterfazFiguraGeometrica;
  * @author Elizabeth
  */
 public class Circulo implements IInterfazFiguraGeometrica<Double>{
-    /**
+
     private double radio;
     // + constructor
     public Circulo(double radio) {

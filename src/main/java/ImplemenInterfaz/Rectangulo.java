@@ -11,7 +11,7 @@ import Interfaz.IInterfazFiguraGeometrica;
  * @author Elizabeth
  */
 public class Rectangulo implements IInterfazFiguraGeometrica<Double>{
-/**
+
     private double ancho;
     private double alto;
     // + constructor para inicializar
