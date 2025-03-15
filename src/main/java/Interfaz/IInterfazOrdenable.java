@@ -8,6 +8,8 @@ package Interfaz;
  *
  * @author Elizabeth
  */
-public interface IInterfazOrdenable {
+public interface IInterfazOrdenable <T>{
+    T ordenar();
+    T ordenarLista();
     
 }

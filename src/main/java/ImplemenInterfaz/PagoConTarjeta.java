@@ -14,7 +14,7 @@ public class PagoConTarjeta implements IInterfazPago<String>{
 
     @Override
     public String procesarPago(Double Cantidad) {
-        return "Pago realizado con tarjeta."; //ponerles la cantidad luego xd
+        return "Pago realizado con tarjeta.$"+ Cantidad; 
     }
 
     
