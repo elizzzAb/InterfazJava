@@ -11,7 +11,7 @@ import Interfaz.IInterfazPago;
  * @author Elizabeth
  */
 public class PagoConEfectivo implements IInterfazPago<String>{
-/**
+
     @Override
     public String procesarPago(Double Cantidad) {
         return "Pago procesado por medio de efectivo.? "; //agregar "Cantidad" luego xd
