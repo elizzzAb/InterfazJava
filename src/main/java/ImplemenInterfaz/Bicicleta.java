@@ -11,7 +11,7 @@ import Interfaz.IInterfazVehiculo;
  * @author Elizabeth
  */
 public class Bicicleta implements IInterfazVehiculo<String>{
-/**
+
     @Override
     public String arrancar() {
         return "El ciclista pedalea y la bicicleta avanza.";

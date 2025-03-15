@@ -11,7 +11,7 @@ import Interfaz.IInterfazVehiculo;
  * @author Elizabeth
  */
 public class Coche implements IInterfazVehiculo<String>{
-/**
+
     @Override
     public String arrancar() {
         return "El conductor gira la llave y el carro arranca.";
