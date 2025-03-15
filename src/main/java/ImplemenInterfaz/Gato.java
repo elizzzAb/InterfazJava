@@ -13,7 +13,7 @@ import Interfaz.IInterfazAnimal;
  * @author Elizabeth
  */
 public class Gato implements IInterfazAnimal<String>{
-/**
+
     @Override
     public String hacerSonido() {
         return "El gato puede maullar así: Miau Miau...";

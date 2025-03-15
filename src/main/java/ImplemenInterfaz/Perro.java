@@ -11,7 +11,7 @@ import Interfaz.IInterfazAnimal;
  * @author Elizabeth
  */
 public class Perro implements IInterfazAnimal<String>{
-/**
+
     @Override
     public String hacerSonido() {
         return "El perro ladra así: Guau Guau...";
