@@ -4,6 +4,7 @@
 
 package com.mycompany.interfazjava;
 
+import ImplemenInterfaz.Animal;
 import ImplemenInterfaz.Bicicleta;
 import ImplemenInterfaz.Circulo;
 import ImplemenInterfaz.Coche;
@@ -14,7 +15,9 @@ import ImplemenInterfaz.ListaNumeros;
 import ImplemenInterfaz.PagoConEfectivo;
 import ImplemenInterfaz.PagoConTarjeta;
 import ImplemenInterfaz.Perro;
+import ImplemenInterfaz.Persona;
 import ImplemenInterfaz.Rectangulo;
+import Interfaz.IInterfazAlimentacion;
 import Interfaz.IInterfazAnimal;
 import Interfaz.IInterfazFiguraGeometrica;
 import Interfaz.IInterfazPago;
@@ -112,6 +115,21 @@ public class InterfazJava {
 
         // Ordenar y mostrar lista ordenada
         System.out.println(lista.ordenar());
+        
+        // -----------------------Alimentación-----------------------------
+        IInterfazAlimentacion<String> animal = new Animal();
+        IInterfazAlimentacion<String> persona = new Persona();
+
+        // Animal
+        System.out.println("------------------------------------------------------------------------");
+        System.out.println("Comportamiento alimenticio del animal:");
+        System.out.println(animal.comer());
+
+        // Persona
+        System.out.println("\nComportamiento alimenticio de la persona:");
+        System.out.println(persona.comer());
+        
+        // -----------------------Notificación-----------------------------
         
 
     }

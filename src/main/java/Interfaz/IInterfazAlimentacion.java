@@ -8,7 +8,7 @@ package Interfaz;
  *
  * @author Elizabeth
  */
-public interface IInterfazAlimentacion {
-    
-    
+public interface IInterfazAlimentacion <T>{
+        T comer();
+
 }
