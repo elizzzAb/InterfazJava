@@ -10,6 +10,8 @@ import ImplemenInterfaz.Circulo;
 import ImplemenInterfaz.Coche;
 import ImplemenInterfaz.CorreoElectronico;
 import ImplemenInterfaz.Desarrollador;
+import ImplemenInterfaz.DescuentoFijo;
+import ImplemenInterfaz.DescuentoPorcentaje;
 import ImplemenInterfaz.Diseñador;
 import ImplemenInterfaz.Gato;
 import ImplemenInterfaz.ListaNumeros;
@@ -22,6 +24,7 @@ import ImplemenInterfaz.Rectangulo;
 import ImplemenInterfaz.SMS;
 import Interfaz.IInterfazAlimentacion;
 import Interfaz.IInterfazAnimal;
+import Interfaz.IInterfazCalcDescuento;
 import Interfaz.IInterfazFiguraGeometrica;
 import Interfaz.IInterfazNotificacion;
 import Interfaz.IInterfazPago;
@@ -162,6 +165,23 @@ public class InterfazJava {
         // Intento de comparación con un objeto no válido
         //System.out.println("\nIntentando comparar con un objeto que no es un producto:");
         //System.out.println(producto1.comparar(noEsProducto));
+        
+        // -----------------------Calculadora de Descuento-----------------------------
+        IInterfazCalcDescuento<Double> descuentoPorcentaje = new DescuentoPorcentaje(30);  
+        IInterfazCalcDescuento<Double> descuentoFijo = new DescuentoFijo(10); 
+        
+        // Precio original
+        double precio = 90.0;  
+
+        // Descuentos
+        double descuento1 = descuentoPorcentaje.calcularDescuento(precio);
+        double descuento2 = descuentoFijo.calcularDescuento(precio);
+        
+        // Mostrar resultados
+        System.out.println("------------------------------------------------------------------------");
+        System.out.println("Precio original: $" + precio);
+        System.out.println("\nDescuento por porcentaje (30%) en el precio de $" + precio + ": $" + descuento1);
+        System.out.println("Descuento fijo de 10 dólares en el precio de $" + precio + ": $" + descuento2);
 
     }
 }

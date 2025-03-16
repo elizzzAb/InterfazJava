@@ -8,7 +8,8 @@ package Interfaz;
  *
  * @author Elizabeth
  */
-public interface IInterfazCalcDescuento {
+public interface IInterfazCalcDescuento <T>{
+    T calcularDescuento(double precio);
     
     
 }
