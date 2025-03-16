@@ -8,6 +8,7 @@ package Interfaz;
  *
  * @author Elizabeth
  */
-public interface IInterfazNotificacion {
+public interface IInterfazNotificacion <T>{
+    T enviarNotificacion();
     
 }

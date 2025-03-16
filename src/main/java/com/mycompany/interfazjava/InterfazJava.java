@@ -8,6 +8,7 @@ import ImplemenInterfaz.Animal;
 import ImplemenInterfaz.Bicicleta;
 import ImplemenInterfaz.Circulo;
 import ImplemenInterfaz.Coche;
+import ImplemenInterfaz.CorreoElectronico;
 import ImplemenInterfaz.Desarrollador;
 import ImplemenInterfaz.Diseñador;
 import ImplemenInterfaz.Gato;
@@ -17,9 +18,11 @@ import ImplemenInterfaz.PagoConTarjeta;
 import ImplemenInterfaz.Perro;
 import ImplemenInterfaz.Persona;
 import ImplemenInterfaz.Rectangulo;
+import ImplemenInterfaz.SMS;
 import Interfaz.IInterfazAlimentacion;
 import Interfaz.IInterfazAnimal;
 import Interfaz.IInterfazFiguraGeometrica;
+import Interfaz.IInterfazNotificacion;
 import Interfaz.IInterfazPago;
 import Interfaz.IInterfazTrabajador;
 import Interfaz.IInterfazVehiculo;
@@ -130,7 +133,17 @@ public class InterfazJava {
         System.out.println(persona.comer());
         
         // -----------------------Notificación-----------------------------
-        
+        IInterfazNotificacion<String> sms = new SMS();
+        IInterfazNotificacion<String> correo = new CorreoElectronico();
+
+        // SMS
+        System.out.println("------------------------------------------------------------------------");
+        System.out.println("Envío de notificación por SMS:");
+        System.out.println(sms.enviarNotificacion());
+
+        // Correo Electrónico
+        System.out.println("\nEnvío de notificación por correo electrónico:");
+        System.out.println(correo.enviarNotificacion());
 
     }
 }
