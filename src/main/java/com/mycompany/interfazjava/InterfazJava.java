@@ -17,6 +17,7 @@ import ImplemenInterfaz.PagoConEfectivo;
 import ImplemenInterfaz.PagoConTarjeta;
 import ImplemenInterfaz.Perro;
 import ImplemenInterfaz.Persona;
+import ImplemenInterfaz.Producto;
 import ImplemenInterfaz.Rectangulo;
 import ImplemenInterfaz.SMS;
 import Interfaz.IInterfazAlimentacion;
@@ -144,6 +145,23 @@ public class InterfazJava {
         // Correo Electrónico
         System.out.println("\nEnvío de notificación por correo electrónico:");
         System.out.println(correo.enviarNotificacion());
+        
+        // -----------------------Comparación de Objetos-----------------------------
+        Producto producto1 = new Producto(100.0);
+        Producto producto2 = new Producto(150.0);
+        //String noEsProducto = "Esto no es un producto"; // Un objeto que no es Producto
+
+        // Comparación entre dos productos
+        System.out.println("------------------------------------------------------------------------");
+        System.out.println("Comparando productos...");
+        System.out.println("Producto 1 vs Producto 2:");
+        System.out.println(producto1.comparar(producto2)); // Producto 1 vs Producto 2
+        System.out.println("Producto 2 vs Producto 1:");
+        System.out.println(producto2.comparar(producto1)); // Producto 2 vs Producto 1
+
+        // Intento de comparación con un objeto no válido
+        //System.out.println("\nIntentando comparar con un objeto que no es un producto:");
+        //System.out.println(producto1.comparar(noEsProducto));
 
     }
 }

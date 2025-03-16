@@ -8,6 +8,7 @@ package Interfaz;
  *
  * @author Elizabeth
  */
-public interface IInterfazCompObjetos {
+public interface IInterfazCompObjetos <T>{
+    T comparar(Object o);
     
 }
