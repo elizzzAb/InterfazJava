@@ -10,6 +10,6 @@ package Interfaz;
  */
 public interface IInterfazOrdenable <T>{
     T ordenar();
-    T ordenarLista();
+    T mostrarLista();
     
 }

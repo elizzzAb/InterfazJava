@@ -10,6 +10,7 @@ import ImplemenInterfaz.Coche;
 import ImplemenInterfaz.Desarrollador;
 import ImplemenInterfaz.Diseñador;
 import ImplemenInterfaz.Gato;
+import ImplemenInterfaz.ListaNumeros;
 import ImplemenInterfaz.PagoConEfectivo;
 import ImplemenInterfaz.PagoConTarjeta;
 import ImplemenInterfaz.Perro;
@@ -95,6 +96,22 @@ public class InterfazJava {
         System.out.println("\nTrabajo del diseñador:");
         System.out.println(diseñador.trabajar());
         
+        // -----------------------Ordenable-----------------------------
+        ListaNumeros lista = new ListaNumeros();
+
+        // Agregar números a la lista
+        lista.agregarNumero(5);
+        lista.agregarNumero(2);
+        lista.agregarNumero(8);
+        lista.agregarNumero(1);
+        lista.agregarNumero(3);
+
+        // Mostrar lista original
+        System.out.println("------------------------------------------------------------------------");
+        System.out.println(lista.mostrarLista());
+
+        // Ordenar y mostrar lista ordenada
+        System.out.println(lista.ordenar());
         
 
     }
